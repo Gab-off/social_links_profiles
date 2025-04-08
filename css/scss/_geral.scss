@@ -1,0 +1,28 @@
+@mixin fonte-principal($weight) {
+	@if $weight == "s" {
+		font-family: "Inter", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 400;
+		font-style: normal;
+	} @else if $weight == "m" {
+		font-weight: 600;
+	} @else if $weight == "l" {
+		font-weight: 700;
+	}
+}
+
+// Footer FrontEndMentor
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	a {
+		color: hsl(228, 45%, 44%);
+	}
+}
+
+// - Font size (paragraph): 14px
+
+// ### Font
+
+// - Family: [Inter](https://fonts.google.com/specimen/Inter)
+// - Weights: 400, 600, 700
