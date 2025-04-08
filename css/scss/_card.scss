@@ -1,0 +1,64 @@
+@use "variaveis-e-cores" as vc;
+
+.card-perfil {
+	min-width: 300px;
+	background: vc.$grey-2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 40px;
+	border-radius: 10px;
+}
+
+//Foto
+.perfil-foto {
+	width: 70px;
+
+	img {
+		width: 100%;
+		border-radius: 50%;
+	}
+}
+
+//Nome
+.name-title {
+	@include vc.fonte-principal(m);
+	font-size: 17px;
+	margin-top: 25px;
+}
+
+// Endereço
+.localization-text {
+	@include vc.fonte-principal(l);
+	color: vc.$green;
+}
+
+// Citação
+.citation-text {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+// Lista midia social
+.list-social_media {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	li.social-media {
+		background: vc.$grey-1;
+		border-radius: 5px;
+		transition: 0.5s;
+		&:hover,
+		&:active {
+			background: vc.$green;
+			color: vc.$grey-3;
+		}
+		a {
+			@include vc.fonte-principal(l);
+			display: block;
+			padding: 10px 0;
+		}
+	}
+}

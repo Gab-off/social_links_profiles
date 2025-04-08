@@ -1,0 +1,19 @@
+//Cores
+$green: hsl(75, 94%, 57%);
+$white: hsl(0, 0%, 100%);
+$grey-1: hsl(0, 0%, 20%);
+$grey-2: hsl(0, 0%, 12%);
+$grey-3: hsl(0, 0%, 8%);
+
+@mixin fonte-principal($weight) {
+	@if $weight == "s" {
+		font-family: "Inter", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 400;
+		font-style: normal;
+	} @else if $weight == "m" {
+		font-weight: 600;
+	} @else if $weight == "l" {
+		font-weight: 700;
+	}
+}
