@@ -1,3 +1,132 @@
+@charset "UTF-8";
+/**
+ * RESET GLOBAL SCSS
+ * ================
+ * - Remove margens e paddings padrão
+ * - Box-sizing mais intuitivo
+ * - Reset de elementos de formulário
+ * - Normalização de tipografia
+ * - Tratamento de imagens responsivas
+ * - Melhorias de acessibilidade
+ */
+/* Reset básico */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove list styles (ul, ol) */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Reset de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset de botões */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+}
+
+/* Elementos de formulário reset */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/* Imagens responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Remove animações para quem prefere reduzir */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Normalização de tipografia */
+html {
+  font-size: 62.5%; /* 1rem = 10px em font-size padrão 16px */
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+/* Remove estilos padrão de headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Remove espaçamento entre células de tabela */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset de fieldset */
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove o ícone de detalhes no Chrome */
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1440px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
